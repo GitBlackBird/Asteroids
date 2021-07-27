@@ -344,6 +344,7 @@
 "Assets/Scripts/Asteroid.cs"
 "Assets/Scripts/AsteroidsSpawner.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0
 
