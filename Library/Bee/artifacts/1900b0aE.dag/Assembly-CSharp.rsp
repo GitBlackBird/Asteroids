@@ -346,6 +346,7 @@
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/TeleportManager.cs"
 -langversion:8.0
 
 /deterministic

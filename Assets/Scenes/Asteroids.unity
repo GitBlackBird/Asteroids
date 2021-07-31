@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &122534211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &958972499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5200,7 +5200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1526347235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5257,7 +5257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1560429562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5331,7 +5331,7 @@ MonoBehaviour:
   trajectoryVariance: 15
   spawnRate: 2
   spawnDistance: 15
-  spawnAmount: 1
+  spawnAmount: 2
 --- !u!4 &1668562268
 Transform:
   m_ObjectHideFlags: 0
@@ -5359,6 +5359,7 @@ GameObject:
   - component: {fileID: 1846341603}
   - component: {fileID: 1846341602}
   - component: {fileID: 1846341605}
+  - component: {fileID: 1846341607}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -5381,6 +5382,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 833614360361319013, guid: 2ad65c01084fd9a4789e0265a1a6c2bd, type: 3}
   trustSpeed: 1
   turnSpeed: 0.1
+  maxSpeed: 2.5
 --- !u!212 &1846341603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5493,12 +5495,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846341601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.05, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846341607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846341601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ca1567b63701a44bb0ceba2eab8daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bourders:
+    topBourder: 5.5
+    bottomBourder: -5.5
+    leftBourder: -9.5
+    rightBourder: 9.5
 --- !u!1 &2010146752
 GameObject:
   m_ObjectHideFlags: 0

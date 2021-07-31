@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
     public Bullet bulletPrefab;
     public float trustSpeed = 1.0f;
     public float turnSpeed = 1.0f;
+
+    public float maxSpeed = 2.5f;
     private Rigidbody2D rigidbody;
     private bool thrusting;
     private float turnDirection;
@@ -35,6 +37,10 @@ public class Player : MonoBehaviour
         } 
         if (turnDirection != 0.0f) {
             rigidbody.AddTorque(turnDirection * this.turnSpeed);
+        }
+
+        if (this.rigidbody.velocity.magnitude > maxSpeed) {
+            this.rigidbody.velocity = this.rigidbody.velocity.normalized * maxSpeed;
         }
     }
     private void Shoot() {
